@@ -2,7 +2,6 @@
 # EnzyWizard-Mut-Clean
 
 
-## brief introduction:
 EnzyWizard-Mut-Clean is a command-line tool for cleaning both a wild-type
 protein structure and its corresponding mutant protein structure, tracing 
 cleaned amino acid substitution(s), generating
