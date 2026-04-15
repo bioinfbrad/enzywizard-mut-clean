@@ -1,0 +1,6341 @@
+{
+  "output_type": "enzywizard_mut_clean",
+  "amino_acid_substitution": "S70G",
+  "cleaned_amino_acid_substitution": "S45G",
+  "wt_amino_acid_mapping_old_to_new": [
+    {
+      "old_residue": {
+        "aa_id": 26,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 1,
+        "aa_name": "H",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 27,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 2,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 28,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 3,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 29,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 4,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 30,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 5,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 31,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 6,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 32,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 7,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 33,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 8,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 34,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 9,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 35,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 10,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 36,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 11,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 37,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 12,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 38,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 13,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 39,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 14,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 40,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 15,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 41,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 16,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 42,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 17,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 43,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 18,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 44,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 19,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 45,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 20,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 46,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 21,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 47,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 22,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 48,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 23,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 49,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 24,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 50,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 25,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 51,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 26,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 52,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 27,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 53,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 28,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 54,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 29,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 55,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 30,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 56,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 31,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 57,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 32,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 58,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 33,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 59,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 34,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 60,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 35,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 61,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 36,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 62,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 37,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 63,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 38,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 64,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 39,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 65,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 40,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 66,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 41,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 67,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 42,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 68,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 43,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 69,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 44,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 70,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 45,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 71,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 46,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 72,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 47,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 73,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 48,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 74,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 49,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 75,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 50,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 76,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 51,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 77,
+        "aa_name": "C",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 52,
+        "aa_name": "C",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 78,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 53,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 79,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 54,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 80,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 55,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 81,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 56,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 82,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 57,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 83,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 58,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 84,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 59,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 85,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 60,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 86,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 61,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 87,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 62,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 88,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 63,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 89,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 64,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 90,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 65,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 91,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 66,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 92,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 67,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 93,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 68,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 94,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 69,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 95,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 70,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 96,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 71,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 97,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 72,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 98,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 73,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 99,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 74,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 100,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 75,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 101,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 76,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 102,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 77,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 103,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 78,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 104,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 79,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 105,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 80,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 106,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 81,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 107,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 82,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 108,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 83,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 109,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 84,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 110,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 85,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 111,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 86,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 112,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 87,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 113,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 88,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 114,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 89,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 115,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 90,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 116,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 91,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 117,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 92,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 118,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 93,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 119,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 94,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 120,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 95,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 121,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 96,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 122,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 97,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 123,
+        "aa_name": "C",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 98,
+        "aa_name": "C",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 124,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 99,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 125,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 100,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 126,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 101,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 127,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 102,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 128,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 103,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 129,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 104,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 130,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 105,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 131,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 106,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 132,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 107,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 133,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 108,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 134,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 109,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 135,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 110,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 136,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 111,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 137,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 112,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 138,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 113,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 139,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 114,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 140,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 115,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 141,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 116,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 142,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 117,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 143,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 118,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 144,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 119,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 145,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 120,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 146,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 121,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 147,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 122,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 148,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 123,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 149,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 124,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 150,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 125,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 151,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 126,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 152,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 127,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 153,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 128,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 154,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 129,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 155,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 130,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 156,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 131,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 157,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 132,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 158,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 133,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 159,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 134,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 160,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 135,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 161,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 136,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 162,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 137,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 163,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 138,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 164,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 139,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 165,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 140,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 166,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 141,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 167,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 142,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 168,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 143,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 169,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 144,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 170,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 145,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 171,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 146,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 172,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 147,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 173,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 148,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 174,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 149,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 175,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 150,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 176,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 151,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 177,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 152,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 178,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 153,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 179,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 154,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 180,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 155,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 181,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 156,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 182,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 157,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 183,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 158,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 184,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 159,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 185,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 160,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 186,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 161,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 187,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 162,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 188,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 163,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 189,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 164,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 190,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 165,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 191,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 166,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 192,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 167,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 193,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 168,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 194,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 169,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 195,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 170,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 196,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 171,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 197,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 172,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 198,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 173,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 199,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 174,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 200,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 175,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 201,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 176,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 202,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 177,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 203,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 178,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 204,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 179,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 205,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 180,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 206,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 181,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 207,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 182,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 208,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 183,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 209,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 184,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 210,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 185,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 211,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 186,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 212,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 187,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 213,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 188,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 214,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 189,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 215,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 190,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 216,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 191,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 217,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 192,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 218,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 193,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 219,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 194,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 220,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 195,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 221,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 196,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 222,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 197,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 223,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 198,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 224,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 199,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 225,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 200,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 226,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 201,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 227,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 202,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 228,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 203,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 229,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 204,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 230,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 205,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 231,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 206,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 232,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 207,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 233,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 208,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 234,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 209,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 235,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 210,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 236,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 211,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 237,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 212,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 238,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 213,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 240,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 214,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 241,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 215,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 242,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 216,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 243,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 217,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 244,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 218,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 245,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 219,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 246,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 220,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 247,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 221,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 248,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 222,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 249,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 223,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 250,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 224,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 251,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 225,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 252,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 226,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 254,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 227,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 255,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 228,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 256,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 229,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 257,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 230,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 258,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 231,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 259,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 232,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 260,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 233,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 261,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 234,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 262,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 235,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 263,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 236,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 264,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 237,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 265,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 238,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 266,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 239,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 267,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 240,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 268,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 241,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 269,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 242,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 270,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 243,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 271,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 244,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 272,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 245,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 273,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 246,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 274,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 247,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 275,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 248,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 276,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 249,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 277,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 250,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 278,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 251,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 279,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 252,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 280,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 253,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 281,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 254,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 282,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 255,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 283,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 256,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 284,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 257,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 285,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 258,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 286,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 259,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 287,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 260,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 288,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 261,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 289,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 262,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 290,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 263,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    }
+  ],
+  "wt_clean_statistics": {
+    "changed_resname": 0,
+    "removed_nonstd": 194,
+    "removed_missing_bb": 0,
+    "removed_missing_heavy_atoms": 0,
+    "removed_unexpected_heavy_atoms": 0,
+    "removed_bad_occ": 0,
+    "removed_inscodes": 0,
+    "kept_residues": 263
+  },
+  "mut_amino_acid_mapping_old_to_new": [
+    {
+      "old_residue": {
+        "aa_id": 26,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 1,
+        "aa_name": "H",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 27,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 2,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 28,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 3,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 29,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 4,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 30,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 5,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 31,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 6,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 32,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 7,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 33,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 8,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 34,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 9,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 35,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 10,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 36,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 11,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 37,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 12,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 38,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 13,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 39,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 14,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 40,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 15,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 41,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 16,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 42,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 17,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 43,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 18,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 44,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 19,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 45,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 20,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 46,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 21,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 47,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 22,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 48,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 23,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 49,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 24,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 50,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 25,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 51,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 26,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 52,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 27,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 53,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 28,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 54,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 29,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 55,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 30,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 56,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 31,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 57,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 32,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 58,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 33,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 59,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 34,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 60,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 35,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 61,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 36,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 62,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 37,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 63,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 38,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 64,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 39,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 65,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 40,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 66,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 41,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 67,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 42,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 68,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 43,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 69,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 44,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 70,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 45,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 71,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 46,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 72,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 47,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 73,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 48,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 74,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 49,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 75,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 50,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 76,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 51,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 77,
+        "aa_name": "C",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 52,
+        "aa_name": "C",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 78,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 53,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 79,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 54,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 80,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 55,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 81,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 56,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 82,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 57,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 83,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 58,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 84,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 59,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 85,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 60,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 86,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 61,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 87,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 62,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 88,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 63,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 89,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 64,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 90,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 65,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 91,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 66,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 92,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 67,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 93,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 68,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 94,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 69,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 95,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 70,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 96,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 71,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 97,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 72,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 98,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 73,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 99,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 74,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 100,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 75,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 101,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 76,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 102,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 77,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 103,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 78,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 104,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 79,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 105,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 80,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 106,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 81,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 107,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 82,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 108,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 83,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 109,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 84,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 110,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 85,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 111,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 86,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 112,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 87,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 113,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 88,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 114,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 89,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 115,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 90,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 116,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 91,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 117,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 92,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 118,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 93,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 119,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 94,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 120,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 95,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 121,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 96,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 122,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 97,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 123,
+        "aa_name": "C",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 98,
+        "aa_name": "C",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 124,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 99,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 125,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 100,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 126,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 101,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 127,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 102,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 128,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 103,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 129,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 104,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 130,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 105,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 131,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 106,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 132,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 107,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 133,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 108,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 134,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 109,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 135,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 110,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 136,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 111,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 137,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 112,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 138,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 113,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 139,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 114,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 140,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 115,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 141,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 116,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 142,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 117,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 143,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 118,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 144,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 119,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 145,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 120,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 146,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 121,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 147,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 122,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 148,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 123,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 149,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 124,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 150,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 125,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 151,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 126,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 152,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 127,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 153,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 128,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 154,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 129,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 155,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 130,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 156,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 131,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 157,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 132,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 158,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 133,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 159,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 134,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 160,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 135,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 161,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 136,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 162,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 137,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 163,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 138,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 164,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 139,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 165,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 140,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 166,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 141,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 167,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 142,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 168,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 143,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 169,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 144,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 170,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 145,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 171,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 146,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 172,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 147,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 173,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 148,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 174,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 149,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 175,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 150,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 176,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 151,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 177,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 152,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 178,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 153,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 179,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 154,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 180,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 155,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 181,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 156,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 182,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 157,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 183,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 158,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 184,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 159,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 185,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 160,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 186,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 161,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 187,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 162,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 188,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 163,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 189,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 164,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 190,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 165,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 191,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 166,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 192,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 167,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 193,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 168,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 194,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 169,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 195,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 170,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 196,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 171,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 197,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 172,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 198,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 173,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 199,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 174,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 200,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 175,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 201,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 176,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 202,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 177,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 203,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 178,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 204,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 179,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 205,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 180,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 206,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 181,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 207,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 182,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 208,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 183,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 209,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 184,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 210,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 185,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 211,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 186,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 212,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 187,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 213,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 188,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 214,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 189,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 215,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 190,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 216,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 191,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 217,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 192,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 218,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 193,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 219,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 194,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 220,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 195,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 221,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 196,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 222,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 197,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 223,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 198,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 224,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 199,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 225,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 200,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 226,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 201,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 227,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 202,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 228,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 203,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 229,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 204,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 230,
+        "aa_name": "F",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 205,
+        "aa_name": "F",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 231,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 206,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 232,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 207,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 233,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 208,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 234,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 209,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 235,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 210,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 236,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 211,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 237,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 212,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 238,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 213,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 240,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 214,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 241,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 215,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 242,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 216,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 243,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 217,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 244,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 218,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 245,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 219,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 246,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 220,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 247,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 221,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 248,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 222,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 249,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 223,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 250,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 224,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 251,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 225,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 252,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 226,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 254,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 227,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 255,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 228,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 256,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 229,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 257,
+        "aa_name": "P",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 230,
+        "aa_name": "P",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 258,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 231,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 259,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 232,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 260,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 233,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 261,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 234,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 262,
+        "aa_name": "V",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 235,
+        "aa_name": "V",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 263,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 236,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 264,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 237,
+        "aa_name": "Y",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 265,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 238,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 266,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 239,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 267,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 240,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 268,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 241,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 269,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 242,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 270,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 243,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 271,
+        "aa_name": "T",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 244,
+        "aa_name": "T",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 272,
+        "aa_name": "M",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 245,
+        "aa_name": "M",
+        "hydrogen_atom_count": 9
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 273,
+        "aa_name": "D",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 246,
+        "aa_name": "D",
+        "hydrogen_atom_count": 4
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 274,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 247,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 275,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 248,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 276,
+        "aa_name": "N",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 249,
+        "aa_name": "N",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 277,
+        "aa_name": "R",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 250,
+        "aa_name": "R",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 278,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 251,
+        "aa_name": "Q",
+        "hydrogen_atom_count": 8
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 279,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 252,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 280,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 253,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 281,
+        "aa_name": "E",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 254,
+        "aa_name": "E",
+        "hydrogen_atom_count": 6
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 282,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 255,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 283,
+        "aa_name": "G",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 256,
+        "aa_name": "G",
+        "hydrogen_atom_count": 3
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 284,
+        "aa_name": "A",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 257,
+        "aa_name": "A",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 285,
+        "aa_name": "S",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 258,
+        "aa_name": "S",
+        "hydrogen_atom_count": 5
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 286,
+        "aa_name": "L",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 259,
+        "aa_name": "L",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 287,
+        "aa_name": "I",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 260,
+        "aa_name": "I",
+        "hydrogen_atom_count": 11
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 288,
+        "aa_name": "K",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 261,
+        "aa_name": "K",
+        "hydrogen_atom_count": 13
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 289,
+        "aa_name": "H",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 262,
+        "aa_name": "H",
+        "hydrogen_atom_count": 7
+      }
+    },
+    {
+      "old_residue": {
+        "aa_id": 290,
+        "aa_name": "W",
+        "hydrogen_atom_count": 0
+      },
+      "new_residue": {
+        "aa_id": 263,
+        "aa_name": "W",
+        "hydrogen_atom_count": 10
+      }
+    }
+  ],
+  "mut_clean_statistics": {
+    "changed_resname": 0,
+    "removed_nonstd": 157,
+    "removed_missing_bb": 0,
+    "removed_missing_heavy_atoms": 0,
+    "removed_unexpected_heavy_atoms": 0,
+    "removed_bad_occ": 0,
+    "removed_inscodes": 0,
+    "kept_residues": 263
+  }
+}
