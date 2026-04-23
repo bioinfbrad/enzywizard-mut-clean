@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1219034528.svg)](https://doi.org/10.5281/zenodo.19709945)
 
 # EnzyWizard-Mut-Clean
 
