@@ -10,6 +10,7 @@ import tempfile
 from ..utils.common_utils import convert_to_json_serializable, InlineJSONEncoder, wrap_leaf_lists_as_rawjson, get_clean_filename, get_optimized_filename
 from openmm.app import PDBFile,PDBxFile, Modeller
 from ..utils.structure_utils import get_single_chain,get_residues_by_chain,get_sequence
+from pdbfixer import PDBFixer
 
 
 
@@ -150,3 +151,59 @@ def write_fasta(struct: Structure, output_path: str | Path, logger: Logger) -> b
         logger.print(f"[ERROR] Failed to write FASTA to {output_path}: {e}")
         return False
 
+
+def load_pdbfixer(path: str | Path,logger: Logger) -> PDBFixer | None:
+
+    p = Path(path)
+
+    try:
+        if not p.exists():
+            logger.print(f"[ERROR] File not found: {str(p)}")
+            return None
+
+        if p.stat().st_size == 0:
+            logger.print(f"[ERROR] File is empty: {str(p)}")
+            return None
+
+        suffix = p.suffix.lower()
+
+        if suffix not in {".pdb", ".cif", ".mmcif"}:
+            logger.print(f"[ERROR] Unsupported format: {str(p)}")
+            return None
+
+        fixer = PDBFixer(filename=str(p))
+
+        if fixer.topology is None:
+            logger.print(f"[ERROR] Failed to load topology: {str(p)}")
+            return None
+
+        return fixer
+
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in loading PDBFixer for {str(p)}: {e}")
+        return None
+
+
+def write_cif_from_pdbfixer(fixer: PDBFixer, output_path: str | Path) -> None:
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_path, "w") as f:
+        PDBxFile.writeFile(
+            fixer.topology,
+            fixer.positions,
+            f,
+            keepIds=True
+        )
+
+def write_pdb_from_pdbfixer(fixer: PDBFixer, output_path: str | Path) -> None:
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_path, "w") as f:
+        PDBFile.writeFile(
+            fixer.topology,
+            fixer.positions,
+            f,
+            keepIds=True
+        )

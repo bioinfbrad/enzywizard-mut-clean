@@ -10,6 +10,7 @@ dependencies:
   - cuda-nvrtc=12.9.86=hecca717_1
   - cuda-version=12.9=h4f385c5_3
   - ld_impl_linux-64=2.45.1=default_hbd61a6d_102
+  - legacy-cgi=2.6.4=pyhcf101f3_0
   - libblas=3.11.0=6_h4a7cf45_openblas
   - libcblas=3.11.0=6_h0358290_openblas
   - libcufft=11.4.1.4=hecca717_1
@@ -38,6 +39,7 @@ dependencies:
   - openmm=8.5.0=py310hc82e367_1
   - openssl=3.6.2=h35e630c_0
   - packaging=26.1=pyhc364b38_0
+  - pdbfixer=1.12=pyhd8ed1ab_1
   - pip=26.0.1=pyh8b19718_0
   - python=3.10.20=h3c07f61_0_cpython
   - python_abi=3.10=8_cp310

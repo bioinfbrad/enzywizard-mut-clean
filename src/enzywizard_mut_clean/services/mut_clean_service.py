@@ -1,10 +1,10 @@
 from __future__ import annotations
 from pathlib import Path
 from ..utils.logging_utils import Logger
-from ..utils.IO_utils import file_exists, get_stem, check_filename_length, load_protein_structure, write_cif, write_pdb, write_json_from_dict_inline_leaf_lists, structure_to_pdbfile, modeller_to_structure, write_fasta
+from ..utils.IO_utils import file_exists, get_stem, check_filename_length, load_protein_structure, write_json_from_dict_inline_leaf_lists, write_fasta, load_pdbfixer, write_cif_from_pdbfixer, write_pdb_from_pdbfixer
 from ..utils.mut_clean_utils import check_amino_acid_substitution
 from ..utils.structure_utils import get_single_chain,get_chain_length
-from ..algorithms.clean_algorithms import clean_structure_to_single_chain_A, add_hydrogens_to_pdbfile, check_cleaned_structure, validate_clean_mapping_coordinates
+from ..algorithms.clean_algorithms import clean_pdbfixer_to_single_chain_A, check_cleaned_structure
 from ..algorithms.mut_clean_algorithms import get_cleaned_amino_acid_substitution, generate_mutclean_report
 from ..utils.common_utils import get_optimized_filename
 
@@ -18,6 +18,10 @@ def run_mutclean_service(wt_input_path: str | Path, mut_input_path: str | Path, 
     wt_input_path=Path(wt_input_path)
     mut_input_path=Path(mut_input_path)
     output_dir = Path(output_dir)
+
+    if not (0.0 <= pH <= 14.0):
+        logger.print(f"[ERROR] Invalid pH value: {pH}. Must be between 0 and 14.")
+        return False
 
     if not file_exists(wt_input_path):
         logger.print(f"[ERROR] Input not found: {wt_input_path}")
@@ -51,6 +55,16 @@ def run_mutclean_service(wt_input_path: str | Path, mut_input_path: str | Path, 
         logger.print(f"[ERROR] Failed to load mutant structure: {mut_input_path}")
         return False
 
+    wt_fixer = load_pdbfixer(wt_input_path, logger)
+    if wt_fixer is None:
+        logger.print(f"[ERROR] Failed to load wild-type PDBFixer: {wt_input_path}")
+        return False
+
+    mut_fixer = load_pdbfixer(mut_input_path, logger)
+    if mut_fixer is None:
+        logger.print(f"[ERROR] Failed to load mutant PDBFixer: {mut_input_path}")
+        return False
+
     logger.print("[INFO] Structures loaded")
 
     # ---- check amino acid substitution ----
@@ -73,43 +87,56 @@ def run_mutclean_service(wt_input_path: str | Path, mut_input_path: str | Path, 
 
     # ---- run algorithm ----
     logger.print("[INFO] Cleaning wild-type and mutant structures started")
-    clean_result = clean_structure_to_single_chain_A(wt_structure, logger)
-    if clean_result is None:
+
+    wt_clean_result = clean_pdbfixer_to_single_chain_A(fixer=wt_fixer,add_H=add_H,logger=logger,pH=pH,force_field_file=force_field_file)
+    if wt_clean_result is None:
         return False
-    wt_cleaned_structure, wt_mapping_old_to_new, wt_stats= clean_result
 
+    wt_cleaned_fixer, wt_mapping_old_to_new, wt_stats = wt_clean_result
 
-    clean_result = clean_structure_to_single_chain_A(mut_structure, logger)
-    if clean_result is None:
+    mut_clean_result = clean_pdbfixer_to_single_chain_A(fixer=mut_fixer,add_H=add_H,logger=logger,pH=pH,force_field_file=force_field_file)
+    if mut_clean_result is None:
         return False
-    mut_cleaned_structure, mut_mapping_old_to_new, mut_stats= clean_result
 
-    cleaned_mutation=get_cleaned_amino_acid_substitution(wt_mapping_old_to_new,mut_mapping_old_to_new,mutation,logger)
+    mut_cleaned_fixer, mut_mapping_old_to_new, mut_stats = mut_clean_result
+
+    cleaned_mutation = get_cleaned_amino_acid_substitution(wt_mapping_old_to_new,mut_mapping_old_to_new,mutation,logger)
     if cleaned_mutation is None:
         return False
 
-    if add_H:
-        temp_pdbfile=structure_to_pdbfile(wt_cleaned_structure,logger,protein_name=wt_name)
-        if temp_pdbfile is None:
-            return False
-        temp_modeller=add_hydrogens_to_pdbfile(temp_pdbfile,logger,pH=pH,force_field_file=force_field_file)
-        if temp_modeller is None:
-            return False
-        wt_cleaned_structure=modeller_to_structure(temp_modeller,logger,protein_name=wt_name)
-        if wt_cleaned_structure is None:
-            return False
+    # save files
 
-        temp_pdbfile=structure_to_pdbfile(mut_cleaned_structure,logger,protein_name=mut_name)
-        if temp_pdbfile is None:
-            return False
-        temp_modeller=add_hydrogens_to_pdbfile(temp_pdbfile,logger,pH=pH,force_field_file=force_field_file)
-        if temp_modeller is None:
-            return False
-        mut_cleaned_structure=modeller_to_structure(temp_modeller,logger,protein_name=mut_name)
-        if mut_cleaned_structure is None:
-            return False
+    cleaned_wt_cif_path = output_dir / get_optimized_filename(f"cleaned_{wt_name}.cif")
+    cleaned_wt_pdb_path = output_dir / get_optimized_filename(f"cleaned_{wt_name}.pdb")
 
-        logger.print(f"[INFO] Hydrogens added")
+    cleaned_mut_cif_path = output_dir / get_optimized_filename(f"cleaned_{mut_name}.cif")
+    cleaned_mut_pdb_path = output_dir / get_optimized_filename(f"cleaned_{mut_name}.pdb")
+
+    write_cif_from_pdbfixer(wt_cleaned_fixer, cleaned_wt_cif_path)
+    logger.print(f"[INFO] Cleaned wild-type CIF saved: {cleaned_wt_cif_path}")
+
+    write_pdb_from_pdbfixer(wt_cleaned_fixer, cleaned_wt_pdb_path)
+    logger.print(f"[INFO] Cleaned wild-type PDB saved: {cleaned_wt_pdb_path}")
+
+    write_cif_from_pdbfixer(mut_cleaned_fixer, cleaned_mut_cif_path)
+    logger.print(f"[INFO] Cleaned mutant CIF saved: {cleaned_mut_cif_path}")
+
+    write_pdb_from_pdbfixer(mut_cleaned_fixer, cleaned_mut_pdb_path)
+    logger.print(f"[INFO] Cleaned mutant PDB saved: {cleaned_mut_pdb_path}")
+
+    # load cleaned structure
+
+    wt_cleaned_structure = load_protein_structure(cleaned_wt_cif_path, wt_name, logger)
+    if wt_cleaned_structure is None:
+        logger.print(f"[ERROR] Failed to load cleaned wild-type structure: {cleaned_wt_cif_path}")
+        return False
+
+    mut_cleaned_structure = load_protein_structure(cleaned_mut_cif_path, mut_name, logger)
+    if mut_cleaned_structure is None:
+        logger.print(f"[ERROR] Failed to load cleaned mutant structure: {cleaned_mut_cif_path}")
+        return False
+
+    logger.print("[INFO] Cleaned structures loaded from saved CIF files")
 
     # ---- post check ----
     wt_cleaned_chain = get_single_chain(wt_cleaned_structure, logger)
@@ -119,6 +146,8 @@ def run_mutclean_service(wt_input_path: str | Path, mut_input_path: str | Path, 
 
     wt_cleaned_length=get_chain_length(wt_cleaned_chain,logger)
     mut_cleaned_length=get_chain_length(mut_cleaned_chain,logger)
+    if wt_cleaned_length is None or mut_cleaned_length is None:
+        return False
     if wt_cleaned_length!=mut_cleaned_length:
         logger.print(f"[ERROR] Cleaned wild-type and mutant sequence lengths are not equal: {wt_cleaned_length} {mut_cleaned_length}")
         return False
@@ -127,39 +156,19 @@ def run_mutclean_service(wt_input_path: str | Path, mut_input_path: str | Path, 
         return False
     if not check_cleaned_structure(mut_cleaned_structure, logger):
         return False
-    if not validate_clean_mapping_coordinates(wt_structure,wt_cleaned_structure,wt_mapping_old_to_new,logger):
-        return False
-    if not validate_clean_mapping_coordinates(mut_structure,mut_cleaned_structure,mut_mapping_old_to_new,logger):
-        return False
 
     # ---- save results ----
 
-    cleaned_wt_cif_path = output_dir / get_optimized_filename(f"cleaned_{wt_name}.cif")
-    cleaned_wt_pdb_path = output_dir / get_optimized_filename(f"cleaned_{wt_name}.pdb")
     cleaned_wt_fasta_path = output_dir / get_optimized_filename(f"cleaned_{wt_name}.fasta")
 
-    cleaned_mut_cif_path = output_dir / get_optimized_filename(f"cleaned_{mut_name}.cif")
-    cleaned_mut_pdb_path = output_dir / get_optimized_filename(f"cleaned_{mut_name}.pdb")
     cleaned_mut_fasta_path = output_dir / get_optimized_filename(f"cleaned_{mut_name}.fasta")
 
     json_report_path = output_dir / get_optimized_filename(f"mut_clean_report_{wt_name}_to_{mut_name}.json")
-
-    write_cif(wt_cleaned_structure,cleaned_wt_cif_path)
-    logger.print(f"[INFO] Cleaned wild-type CIF saved: {cleaned_wt_cif_path}")
-
-    write_pdb(wt_cleaned_structure,cleaned_wt_pdb_path)
-    logger.print(f"[INFO] Cleaned wild-type PDB saved: {cleaned_wt_pdb_path}")
 
     if write_fasta(wt_cleaned_structure,cleaned_wt_fasta_path, logger):
         logger.print(f"[INFO] Cleaned wild-type FASTA saved: {cleaned_wt_fasta_path}")
     else:
         return False
-
-    write_cif(mut_cleaned_structure,cleaned_mut_cif_path)
-    logger.print(f"[INFO] Cleaned mutant CIF saved: {cleaned_mut_cif_path}")
-
-    write_pdb(mut_cleaned_structure,cleaned_mut_pdb_path)
-    logger.print(f"[INFO] Cleaned mutant PDB saved: {cleaned_mut_pdb_path}")
 
     if write_fasta(mut_cleaned_structure,cleaned_mut_fasta_path, logger):
         logger.print(f"[INFO] Cleaned mutant FASTA saved: {cleaned_mut_fasta_path}")

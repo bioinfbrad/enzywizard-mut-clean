@@ -7,4 +7,5 @@ dependencies:
   - openmm=8.5.0
   - biopython=1.86
   - numpy=1.23.5
+  - pdbfixer=1.12
 prefix: /home/wmk/miniconda3/envs/enzywizard-mut-clean

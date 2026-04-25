@@ -1,16 +1,11 @@
-from typing import Dict, Tuple, Any
+from typing import Dict, Any, List
 from ..utils.logging_utils import Logger
 from ..utils.mut_clean_utils import get_muts_from_aas
 from Bio.PDB.Structure import Structure
 from ..utils.structure_utils import get_single_chain
 from ..utils.sequence_utils import normalize_aa_name_to_one_letter
 
-def get_cleaned_amino_acid_substitution(
-    wt_mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]],
-    mut_mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]],
-    mutation: str,
-    logger: Logger,
-) -> str | None:
+def get_cleaned_amino_acid_substitution(wt_mapping_old_to_new: List[Dict[str, Dict[str, Any]]],mut_mapping_old_to_new: List[Dict[str, Dict[str, Any]]],mutation: str,logger: Logger) -> str | None:
 
 
     muts_list = get_muts_from_aas(mutation)
@@ -26,11 +21,31 @@ def get_cleaned_amino_acid_substitution(
     wt_pos_to_new = {}
     mut_pos_to_new = {}
 
-    for (old_resseq, resname_old, old_icode), (new_resseq, resname_std, new_icode) in wt_mapping_old_to_new.items():
-        wt_pos_to_new[old_resseq] = new_resseq
+    for mapping_item in wt_mapping_old_to_new:
+        old_residue = mapping_item.get("old_residue", {})
+        new_residue = mapping_item.get("new_residue", {})
 
-    for (old_resseq, resname_old, old_icode), (new_resseq, resname_std, new_icode) in mut_mapping_old_to_new.items():
-        mut_pos_to_new[old_resseq] = new_resseq
+        old_pos = old_residue.get("aa_index")
+        new_pos = new_residue.get("aa_index")
+
+        if not isinstance(old_pos, int) or not isinstance(new_pos, int):
+            logger.print("[ERROR] Invalid wild-type mapping item in cleaned residue mapping.")
+            return None
+
+        wt_pos_to_new[old_pos] = new_pos
+
+    for mapping_item in mut_mapping_old_to_new:
+        old_residue = mapping_item.get("old_residue", {})
+        new_residue = mapping_item.get("new_residue", {})
+
+        old_pos = old_residue.get("aa_index")
+        new_pos = new_residue.get("aa_index")
+
+        if not isinstance(old_pos, int) or not isinstance(new_pos, int):
+            logger.print("[ERROR] Invalid mutant mapping item in cleaned residue mapping.")
+            return None
+
+        mut_pos_to_new[old_pos] = new_pos
 
     cleaned_muts = []
 
@@ -67,9 +82,9 @@ def generate_mutclean_report(
     wt_cleaned_structure: Structure,
     mut_structure: Structure,
     mut_cleaned_structure: Structure,
-    wt_mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]],
+    wt_mapping_old_to_new: List[Dict[str, Dict[str, Any]]],
     wt_stats: Dict[str, int],
-    mut_mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]],
+    mut_mapping_old_to_new: List[Dict[str, Dict[str, Any]]],
     mut_stats: Dict[str, int],
     logger: Logger
 ) -> dict | None:
@@ -95,47 +110,52 @@ def generate_mutclean_report(
     wt_old_residue_dict = {}
     for res in wt_old_chain.get_residues():
         hetflag, resseq, icode = res.id
-        if hetflag != " ":
+        if str(hetflag).strip():
             continue
-        resname = res.get_resname().strip()
-        wt_old_residue_dict[(int(resseq), resname, str(icode))] = res
+        wt_old_residue_dict[int(resseq)] = res
 
     wt_new_residue_dict = {}
     for res in wt_new_chain.get_residues():
         hetflag, resseq, icode = res.id
-        if hetflag != " ":
+        if str(hetflag).strip():
             continue
-        resname = res.get_resname().strip()
-        wt_new_residue_dict[(int(resseq), resname, str(icode))] = res
+        wt_new_residue_dict[int(resseq)] = res
 
     mut_old_residue_dict = {}
     for res in mut_old_chain.get_residues():
         hetflag, resseq, icode = res.id
-        if hetflag != " ":
+        if str(hetflag).strip():
             continue
-        resname = res.get_resname().strip()
-        mut_old_residue_dict[(int(resseq), resname, str(icode))] = res
+        mut_old_residue_dict[int(resseq)] = res
 
     mut_new_residue_dict = {}
     for res in mut_new_chain.get_residues():
         hetflag, resseq, icode = res.id
-        if hetflag != " ":
+        if str(hetflag).strip():
             continue
-        resname = res.get_resname().strip()
-        mut_new_residue_dict[(int(resseq), resname, str(icode))] = res
+        mut_new_residue_dict[int(resseq)] = res
 
-    for old_key, new_value in wt_mapping_old_to_new.items():
-        old_resseq, old_resname, old_icode = old_key
-        new_resseq, new_resname, new_icode = new_value
+    for mapping_item in wt_mapping_old_to_new:
+        old_residue_info = mapping_item.get("old_residue", {})
+        new_residue_info = mapping_item.get("new_residue", {})
 
-        old_res = wt_old_residue_dict.get((old_resseq, old_resname, old_icode))
-        if old_res is None:
-            logger.print(f"[ERROR] WT old residue not found: {old_key}")
+        old_resseq = old_residue_info.get("aa_index")
+        old_resname = old_residue_info.get("aa_name")
+        new_resseq = new_residue_info.get("aa_index")
+        new_resname = new_residue_info.get("aa_name")
+
+        if not isinstance(old_resseq, int) or not isinstance(new_resseq, int):
+            logger.print("[ERROR] Invalid WT residue index in mapping.")
             return None
 
-        new_res = wt_new_residue_dict.get((new_resseq, new_resname, new_icode))
+        old_res = wt_old_residue_dict.get(old_resseq)
+        if old_res is None:
+            logger.print(f"[ERROR] WT old residue not found: {old_resseq}")
+            return None
+
+        new_res = wt_new_residue_dict.get(new_resseq)
         if new_res is None:
-            logger.print(f"[ERROR] WT new residue not found: {new_value}")
+            logger.print(f"[ERROR] WT new residue not found: {new_resseq}")
             return None
 
         old_h_count = sum(
@@ -151,28 +171,39 @@ def generate_mutclean_report(
         wt_amino_acid_mapping_old_2_new.append({
             "old_residue": {
                 "aa_id": old_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(old_resname),
+                "aa_name": old_resname if isinstance(old_resname, str) else normalize_aa_name_to_one_letter(
+                    old_res.get_resname().strip()),
                 "hydrogen_atom_count": old_h_count,
             },
             "new_residue": {
                 "aa_id": new_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(new_resname),
+                "aa_name": new_resname if isinstance(new_resname, str) else normalize_aa_name_to_one_letter(
+                    new_res.get_resname().strip()),
                 "hydrogen_atom_count": new_h_count,
             }
         })
 
-    for old_key, new_value in mut_mapping_old_to_new.items():
-        old_resseq, old_resname, old_icode = old_key
-        new_resseq, new_resname, new_icode = new_value
+    for mapping_item in mut_mapping_old_to_new:
+        old_residue_info = mapping_item.get("old_residue", {})
+        new_residue_info = mapping_item.get("new_residue", {})
 
-        old_res = mut_old_residue_dict.get((old_resseq, old_resname, old_icode))
-        if old_res is None:
-            logger.print(f"[ERROR] MUT old residue not found: {old_key}")
+        old_resseq = old_residue_info.get("aa_index")
+        old_resname = old_residue_info.get("aa_name")
+        new_resseq = new_residue_info.get("aa_index")
+        new_resname = new_residue_info.get("aa_name")
+
+        if not isinstance(old_resseq, int) or not isinstance(new_resseq, int):
+            logger.print("[ERROR] Invalid MUT residue index in mapping.")
             return None
 
-        new_res = mut_new_residue_dict.get((new_resseq, new_resname, new_icode))
+        old_res = mut_old_residue_dict.get(old_resseq)
+        if old_res is None:
+            logger.print(f"[ERROR] MUT old residue not found: {old_resseq}")
+            return None
+
+        new_res = mut_new_residue_dict.get(new_resseq)
         if new_res is None:
-            logger.print(f"[ERROR] MUT new residue not found: {new_value}")
+            logger.print(f"[ERROR] MUT new residue not found: {new_resseq}")
             return None
 
         old_h_count = sum(
@@ -188,12 +219,14 @@ def generate_mutclean_report(
         mut_amino_acid_mapping_old_2_new.append({
             "old_residue": {
                 "aa_id": old_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(old_resname),
+                "aa_name": old_resname if isinstance(old_resname, str) else normalize_aa_name_to_one_letter(
+                    old_res.get_resname().strip()),
                 "hydrogen_atom_count": old_h_count,
             },
             "new_residue": {
                 "aa_id": new_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(new_resname),
+                "aa_name": new_resname if isinstance(new_resname, str) else normalize_aa_name_to_one_letter(
+                    new_res.get_resname().strip()),
                 "hydrogen_atom_count": new_h_count,
             }
         })

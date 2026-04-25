@@ -3161,13 +3161,11 @@
     }
   ],
   "wt_clean_statistics": {
+    "removed_heterogen": 0,
     "changed_resname": 0,
-    "removed_nonstd": 194,
-    "removed_missing_bb": 0,
-    "removed_missing_heavy_atoms": 0,
-    "removed_unexpected_heavy_atoms": 0,
-    "removed_bad_occ": 0,
-    "removed_inscodes": 0,
+    "fixed_residues": 0,
+    "added_heavy_atoms": 0,
+    "added_hydrogen_atoms": 2043,
     "kept_residues": 263
   },
   "mut_amino_acid_mapping_old_to_new": [
@@ -6329,13 +6327,11 @@
     }
   ],
   "mut_clean_statistics": {
+    "removed_heterogen": 0,
     "changed_resname": 0,
-    "removed_nonstd": 157,
-    "removed_missing_bb": 0,
-    "removed_missing_heavy_atoms": 0,
-    "removed_unexpected_heavy_atoms": 0,
-    "removed_bad_occ": 0,
-    "removed_inscodes": 0,
+    "fixed_residues": 0,
+    "added_heavy_atoms": 0,
+    "added_hydrogen_atoms": 2041,
     "kept_residues": 263
   }
 }

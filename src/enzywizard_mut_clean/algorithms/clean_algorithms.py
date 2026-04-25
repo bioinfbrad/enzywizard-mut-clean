@@ -1,278 +1,173 @@
 from __future__ import annotations
 from Bio.PDB.Structure import Structure
+from Bio.PDB.Residue import Residue
 from ..utils.logging_utils import Logger
 from ..utils.structure_utils import get_single_chain, get_residues_by_chain
-from Bio.PDB.Model import Model
-from Bio.PDB.Chain import Chain
-from typing import Dict, List, Tuple, Optional, Union
+from typing import Dict, List, Tuple, Any
 from ..utils.clean_utils import (
     standardize_resname,
     choose_atom_altloc,
-    clone_atom,
     normalize_atom_name,
     is_hydrogen_atom,
+    normalize_aa_name_to_one_letter,
+    get_single_chain_from_pdbfixer,
+    count_single_chain_heterogens_from_pdbfixer_chain,
+    build_nonstandard_residue_count_from_fixer,
+    build_missing_atom_stats_from_fixer,
+    get_single_chain_protein_residue_info_from_pdbfixer_chain,
+    count_hydrogen_atoms_in_fixer,
+    renumber_single_chain_fixer_residues
 )
 from ..resources.aa_resources import (
     AA3_STANDARD,
-    AA3_REQUIRED_HEAVY_ATOMS,
     AA3_EXPECTED_HEAVY_ATOM_SET,
     AA3_ALLOWED_HEAVY_ATOM_SET_WITH_OXT,
     BACKBONE_REQUIRED_ATOMS,
 )
 from Bio.PDB.Atom import Atom
-from Bio.PDB.Residue import Residue
 from openmm.app import Modeller, ForceField, PDBFile
-import math
-from ..utils.sequence_utils import normalize_aa_name_to_one_letter
+import numpy as np
+from pdbfixer import PDBFixer
+from openmm import unit
 
-def clean_structure_to_single_chain_A(struct: Structure, logger: Logger) -> Tuple[Structure, Dict[Tuple[int, str, str], Tuple[int, str, str]], Dict[str, int]] | None:
-    old_chain = get_single_chain(struct, logger)
+def clean_pdbfixer_to_single_chain_A(fixer: PDBFixer,add_H: bool,logger: Logger,pH: float = 7.0,force_field_file: str = "charmm36.xml") -> Tuple[PDBFixer, List[Dict[str, Dict[str, Any]]], Dict[str, int]] | None:
+    topology = fixer.topology
+    if topology is None:
+        logger.print(f"[ERROR] No topology found in PDBFixer")
+        return None
+
+    chain_list = list(topology.chains())
+    num_chains = len(chain_list)
+    if num_chains == 0:
+        logger.print(f"[ERROR] No chain found in PDBFixer topology")
+        return None
+
+    # keep only the first chain
+    if num_chains > 1:
+        try:
+            fixer.removeChains(range(1, num_chains))
+        except Exception as e:
+            logger.print(f"[ERROR] Exception in removing extra chains: {e}")
+            return None
+
+    # obtain single old chain
+    old_chain = get_single_chain_from_pdbfixer(fixer, logger)
     if old_chain is None:
         return None
 
-    new_struct = Structure(struct.id + "_cleaned")
-    new_model = Model(0)
-    new_chain = Chain("A")
+    # mapping
+    mapping_old_to_new: List[Dict[str, Dict[str, Any]]] = []
 
-    mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]] = {}
+    # locate non-standard residues
+    try:
+        fixer.findNonstandardResidues()
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in findNonstandardResidues: {e}")
+        return None
 
-    new_resseq = 0
-    removed_nonstd = 0
-    removed_missing_bb = 0
-    removed_bad_occ = 0
-    changed_resname = 0
-    removed_inscodes = 0
-    removed_missing_heavy_atoms = 0
-    removed_unexpected_heavy_atoms = 0
+    # old statistics before cleaning
+    removed_heterogen = count_single_chain_heterogens_from_pdbfixer_chain(old_chain)
+    changed_resname = build_nonstandard_residue_count_from_fixer(fixer)
 
-    for res in old_chain.get_residues():
-        hetflag, resseq, icode = res.id
+    # build old mapping side
+    old_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(old_chain)
+    for old_residue_info in old_residue_info_list:
+        mapping_old_to_new.append(
+            {
+                "old_residue": old_residue_info,
+                "new_residue": {},
+            }
+        )
 
-        resname_old = res.get_resname().strip()
-        resname_std = standardize_resname(resname_old)
-        if resname_std != resname_old:
-            changed_resname += 1
-
-        if resname_std not in AA3_STANDARD:
-            removed_nonstd += 1
-            continue
-
-        atoms_by_name: Dict[str, List[Atom]] = {}
-        actual_heavy_atom_set = set()
-
-        for atom in res.get_atoms():
-            atom_name = normalize_atom_name(atom.get_name())
-            atoms_by_name.setdefault(atom_name, []).append(atom)
-
-            if not is_hydrogen_atom(atom):
-                actual_heavy_atom_set.add(atom_name)
-
-        if any(atom_name not in actual_heavy_atom_set for atom_name in BACKBONE_REQUIRED_ATOMS):
-            removed_missing_bb += 1
-            continue
-
-        expected_heavy_atom_set = AA3_EXPECTED_HEAVY_ATOM_SET.get(resname_std)
-        if expected_heavy_atom_set is None:
-            removed_nonstd += 1
-            continue
-
-        if not expected_heavy_atom_set.issubset(actual_heavy_atom_set):
-            removed_missing_heavy_atoms += 1
-            continue
-
-        allowed_heavy_atom_set = AA3_ALLOWED_HEAVY_ATOM_SET_WITH_OXT[resname_std]
-        if not actual_heavy_atom_set.issubset(allowed_heavy_atom_set):
-            removed_unexpected_heavy_atoms += 1
-            continue
-
-        bad_occ = False
-        for atom_name in BACKBONE_REQUIRED_ATOMS:
-            chosen = choose_atom_altloc(atoms_by_name[atom_name])
-            occ = chosen.get_occupancy()
-            if occ is not None and occ < 0:
-                bad_occ = True
-                break
-        if bad_occ:
-            removed_bad_occ += 1
-            continue
-
-        old_resseq = int(resseq)
-        old_icode = str(icode)
-        if old_icode.strip():
-            removed_inscodes += 1
-
-        new_resseq += 1
-        new_icode = " "
-        mapping_old_to_new[(old_resseq, resname_old, old_icode)] = (new_resseq, resname_std, new_icode)
-
-        new_res = Residue((" ", new_resseq, " "), resname_std, res.get_segid())
-
-        for atom_name, atom_list in atoms_by_name.items():
-            chosen = choose_atom_altloc(atom_list)
-            new_res.add(clone_atom(chosen))
-
-        new_chain.add(new_res)
-
-    new_model.add(new_chain)
-    new_struct.add(new_model)
-
-    stats = {
-        "changed_resname": changed_resname,
-        "removed_nonstd": removed_nonstd,
-        "removed_missing_bb": removed_missing_bb,
-        "removed_missing_heavy_atoms": removed_missing_heavy_atoms,
-        "removed_unexpected_heavy_atoms": removed_unexpected_heavy_atoms,
-        "removed_bad_occ": removed_bad_occ,
-        "removed_inscodes": removed_inscodes,
-        "kept_residues": new_resseq,
-    }
-    return new_struct, mapping_old_to_new, stats
-
-def add_hydrogens_to_pdbfile(pdb: PDBFile, logger: Logger, pH:float = 7.0, force_field_file: str = "charmm36.xml") -> Modeller | None:
+    # execute cleaning
+    try:
+        fixer.removeHeterogens(keepWater=False)
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in removeHeterogens: {e}")
+        return None
 
     try:
-        ff = ForceField(force_field_file)
-
-        modeller = Modeller(pdb.topology, pdb.positions)
-        modeller.addHydrogens(forcefield=ff, pH=pH)
-
-        return modeller
-
+        fixer.replaceNonstandardResidues()
     except Exception as e:
-        logger.print(f"[ERROR] Failed to add hydrogens: {e}")
+        logger.print(f"[ERROR] Exception in replaceNonstandardResidues: {e}")
         return None
 
+    fixer.missingResidues = {}
 
-def validate_clean_mapping_coordinates(structure: Structure,cleaned_structure: Structure,mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]],logger: Logger) -> bool:
-    tol: float = 1e-3
-
-    old_chain = get_single_chain(structure, logger)
-    if old_chain is None:
-        return False
-
-    new_chain = get_single_chain(cleaned_structure, logger)
-    if new_chain is None:
-        return False
-
-    old_res_list = get_residues_by_chain(old_chain, logger)
-    if old_res_list is None:
-        return False
-
-    new_res_list = get_residues_by_chain(new_chain, logger)
-    if new_res_list is None:
-        return False
-
-    # 构建 dict
-    old_dict = {}
-    for (res_id, resname, coord) in old_res_list:
-        _, resseq, icode = res_id
-        old_dict[(int(resseq), resname, str(icode))] = coord
-
-    new_dict = {}
-    for (res_id, resname, coord) in new_res_list:
-        _, resseq, icode = res_id
-        new_dict[(int(resseq), resname, str(icode))] = coord
-
-    # 校验 mapping
-    for old_key, new_key in mapping_old_to_new.items():
-        if old_key not in old_dict:
-            logger.print(f"[ERROR] Old residue not found: {old_key}")
-            return False
-
-        if new_key not in new_dict:
-            logger.print(f"[ERROR] New residue not found: {new_key}")
-            return False
-
-        old_coord = old_dict[old_key]
-        new_coord = new_dict[new_key]
-
-        dist = math.sqrt(
-            (old_coord[0] - new_coord[0]) ** 2 +
-            (old_coord[1] - new_coord[1]) ** 2 +
-            (old_coord[2] - new_coord[2]) ** 2
-        )
-
-        if dist > tol:
-            logger.print(
-                f"[ERROR] CA coordinate changed after cleaning: "
-                f"{old_key} -> {new_key}, distance = {dist}"
-            )
-            return False
-
-    return True
-
-
-
-def generate_clean_report(structure: Structure, cleaned_structure: Structure, mapping_old_to_new: Dict[Tuple[int, str, str], Tuple[int, str, str]], stats: Dict[str, int], logger: Logger) -> dict | None:
-
-    amino_acid_mapping_old_2_new: list[dict[str, dict]] = []
-
-    old_chain = get_single_chain(structure, logger)
-    if old_chain is None:
+    try:
+        fixer.findMissingAtoms()
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in findMissingAtoms: {e}")
         return None
 
-    new_chain = get_single_chain(cleaned_structure, logger)
+    # statistics after replacement and after missing atoms are located
+    fixed_residues, added_heavy_atoms = build_missing_atom_stats_from_fixer(fixer)
+
+    try:
+        fixer.addMissingAtoms(seed=202602)
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in addMissingAtoms: {e}")
+        return None
+
+    hydrogen_count_before = count_hydrogen_atoms_in_fixer(fixer)
+
+    if add_H:
+        try:
+            ff = ForceField(force_field_file) if force_field_file else None
+            fixer.addMissingHydrogens(pH=pH, forcefield=ff)
+        except Exception as e:
+            logger.print(f"[ERROR] Exception in addMissingHydrogens: {e}")
+            return None
+
+    hydrogen_count_after = count_hydrogen_atoms_in_fixer(fixer)
+    added_hydrogen_atoms = hydrogen_count_after - hydrogen_count_before
+    if added_hydrogen_atoms < 0:
+        added_hydrogen_atoms = 0
+
+    # check NaN coordinates before renumbering / writing
+    try:
+        positions_array = np.array(fixer.positions.value_in_unit(unit.nanometer))
+        if np.isnan(positions_array).any():
+            logger.print("[ERROR] NaN coordinates detected after PDBFixer cleaning")
+            return None
+    except Exception as e:
+        logger.print(f"[ERROR] Exception in checking coordinates after cleaning: {e}")
+        return None
+
+    # renumber after fixing
+    fixer = renumber_single_chain_fixer_residues(fixer, logger)
+    if fixer is None:
+        return None
+
+    # update new mapping side
+    new_chain = get_single_chain_from_pdbfixer(fixer, logger)
     if new_chain is None:
         return None
 
-    old_residue_dict = {}
-    for res in old_chain.get_residues():
-        hetflag, resseq, icode = res.id
-        if hetflag != " ":
-            continue
-        resname = res.get_resname().strip()
-        old_residue_dict[(int(resseq), resname, str(icode))] = res
+    new_residue_info_list = get_single_chain_protein_residue_info_from_pdbfixer_chain(new_chain)
 
-    new_residue_dict = {}
-    for res in new_chain.get_residues():
-        hetflag, resseq, icode = res.id
-        if hetflag != " ":
-            continue
-        resname = res.get_resname().strip()
-        new_residue_dict[(int(resseq), resname, str(icode))] = res
-
-    for old_key, new_value in mapping_old_to_new.items():
-        old_resseq, old_resname, old_icode = old_key
-        new_resseq, new_resname, new_icode = new_value
-
-        old_res = old_residue_dict.get((old_resseq, old_resname, old_icode))
-        if old_res is None:
-            logger.print(f"[ERROR] Old residue not found: {old_key}")
-            return None
-
-        new_res = new_residue_dict.get((new_resseq, new_resname, new_icode))
-        if new_res is None:
-            logger.print(f"[ERROR] New residue not found: {new_value}")
-            return None
-
-        old_h_count = sum(
-            1 for atom in old_res.get_atoms()
-            if atom.element and atom.element.strip().upper() == "H"
+    if len(old_residue_info_list) != len(new_residue_info_list):
+        logger.print(
+            f"[ERROR] Old and new protein residue counts are inconsistent: "
+            f"{len(old_residue_info_list)} vs {len(new_residue_info_list)}"
         )
+        return None
 
-        new_h_count = sum(
-            1 for atom in new_res.get_atoms()
-            if atom.element and atom.element.strip().upper() == "H"
-        )
+    for i, new_residue_info in enumerate(new_residue_info_list):
+        mapping_old_to_new[i]["new_residue"] = new_residue_info
 
-        amino_acid_mapping_old_2_new.append({
-            "old_residue": {
-                "aa_id": old_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(old_resname),
-                "hydrogen_atom_count": old_h_count,
-            },
-            "new_residue": {
-                "aa_id": new_resseq,
-                "aa_name": normalize_aa_name_to_one_letter(new_resname),
-                "hydrogen_atom_count": new_h_count,
-            }
-        })
+    kept_residues = len(new_residue_info_list)
 
-    return {
-        "output_type": "enzywizard_clean",
-        "amino_acid_mapping_old_to_new": amino_acid_mapping_old_2_new,
-        "clean_statistics": stats,
+    stats = {
+        "removed_heterogen": removed_heterogen,
+        "changed_resname": changed_resname,
+        "fixed_residues": fixed_residues,
+        "added_heavy_atoms": added_heavy_atoms,
+        "added_hydrogen_atoms": added_hydrogen_atoms,
+        "kept_residues": kept_residues,
     }
+
+    return fixer, mapping_old_to_new, stats
 
 def check_cleaned_structure(struct: Structure, logger: Logger) -> bool:
     model_count = len(list(struct.get_models()))
@@ -335,15 +230,6 @@ def check_cleaned_structure(struct: Structure, logger: Logger) -> bool:
                     f"[ERROR] Missing backbone atom '{atom_name}' at residue {resseq}. Please run 'enzywizard clean' first.")
                 return False
 
-        for atom_name in BACKBONE_REQUIRED_ATOMS:
-            chosen = choose_atom_altloc(atoms_by_name[atom_name])
-            occ = chosen.get_occupancy()
-            if occ is not None and occ < 0:
-                logger.print(
-                    f"[ERROR] Backbone atom '{atom_name}' at residue {resseq} has invalid occupancy {occ}. Please run 'enzywizard clean' first."
-                )
-                return False
-
         expected_heavy_atom_set = AA3_EXPECTED_HEAVY_ATOM_SET.get(resname)
         if expected_heavy_atom_set is None:
             logger.print(f"[ERROR] No expected heavy atom definition for residue '{resname}' at residue {resseq}.")
@@ -367,15 +253,6 @@ def check_cleaned_structure(struct: Structure, logger: Logger) -> bool:
                 f"Please run 'enzywizard clean' first."
             )
             return False
-
-        for atom_name in actual_heavy_atom_set:
-            chosen = choose_atom_altloc(atoms_by_name[atom_name])
-            occ = chosen.get_occupancy()
-            if occ is not None and occ < 0:
-                logger.print(
-                    f"[ERROR] Heavy atom '{atom_name}' at residue {resseq} has invalid occupancy {occ}. Please run 'enzywizard clean' first."
-                )
-                return False
 
         expected_resseq += 1
 
