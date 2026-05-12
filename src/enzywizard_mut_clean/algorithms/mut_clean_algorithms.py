@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 from ..utils.logging_utils import Logger
-from ..utils.mut_clean_utils import get_muts_from_aas
+from ..utils.mut_clean_utils import get_muts_from_aas, postprocess_mutclean_report_to_schema
 from Bio.PDB.Structure import Structure
 from ..utils.structure_utils import get_single_chain
 from ..utils.sequence_utils import normalize_aa_name_to_one_letter
@@ -231,7 +231,7 @@ def generate_mutclean_report(
             }
         })
 
-    return {
+    raw_report = {
         "output_type": "enzywizard_mut_clean",
         "amino_acid_substitution": old_aas,
         "cleaned_amino_acid_substitution": cleaned_aas,
@@ -240,3 +240,5 @@ def generate_mutclean_report(
         "mut_amino_acid_mapping_old_to_new": mut_amino_acid_mapping_old_2_new,
         "mut_clean_statistics": mut_stats,
     }
+
+    return postprocess_mutclean_report_to_schema(raw_report, logger)
