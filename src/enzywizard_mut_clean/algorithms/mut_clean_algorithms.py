@@ -241,4 +241,4 @@ def generate_mutclean_report(
         "mut_clean_statistics": mut_stats,
     }
 
-    return postprocess_mutclean_report_to_schema(raw_report, logger)
+    return postprocess_mutclean_report_to_schema(raw_report)
