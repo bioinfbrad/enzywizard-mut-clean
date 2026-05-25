@@ -38,8 +38,8 @@ Amino acid substitution(s) describing the mutation relationship between the
 wild-type and mutant structures.
 Examples:
 S70G
-S70G,A123V
-Multiple amino acid substitutions should be separated by ','.
+S70G;A123V
+Multiple amino acid substitutions should be separated by ';'.
 
 -o, --output_dir
 Required.
